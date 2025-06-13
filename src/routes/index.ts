@@ -3,6 +3,7 @@ import { filmController } from '../controllers/film.controller';
 import { categoryController } from '../controllers/category.controller';
 import { languageController } from '../controllers/language.controller';
 import { actorController } from '../controllers/actor.controller';
+import { rentalRoutes } from './rental.routes';
 
 export const routes: ServerRoute[] = [
   {
@@ -29,5 +30,6 @@ export const routes: ServerRoute[] = [
     method: 'GET',
     path: '/actors',
     options: actorController.getActors
-  }
+  },
+  ...rentalRoutes
 ]; 
