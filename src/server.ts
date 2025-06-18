@@ -28,8 +28,8 @@ const init = async () => {
     grouping: 'tags',
     sortEndpoints: 'ordered',
     documentationPath: '/documentation',
-    swaggerUIPath: '/swaggerui/',
-    jsonPath: '/swagger.json',
+    // swaggerUIPath: '/swaggerui/',
+    // jsonPath: '/swagger.json',
     tags: [
       {
         name: 'films',
@@ -43,14 +43,9 @@ const init = async () => {
         name: 'rentals',
         description: 'Rental management operations'
       },
-      {
-        name: 'staff',
-        description: 'Staff management operations'
-      }
+
     ],
-    securityDefinitions: {
-      // You can add security definitions here if needed
-    }
+
   };
 
   await server.register([

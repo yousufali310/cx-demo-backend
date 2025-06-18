@@ -5,26 +5,20 @@ This is a RESTful API built with Hapi.js, TypeScript, and Prisma for managing a 
 ## Features
 
 - Films Module
-  - List films with filtering and sorting
+  - List films with filtering
   - Filter by category, language, release year, length, and actor
-  - Save and manage filter/sort views
-  - View film details and actors
+
 
 - Stores Module
-  - List stores with staff and rental counts
-  - Sort by various fields including computed fields
-  - Filter by city, zip code, and staff count
-  - View store details, staff, and rentals
+  - List stores with manager and rental counts
+
 
 - Rental Module
   - List rentals with movie, customer, store details
   - Filter by date range, store, customer, and movie
   - View detailed rental information
 
-## Prerequisites
 
-- Node.js >= 18.18
-- MySQL database with Sakila sample database
 
 ## Setup
 
@@ -36,8 +30,7 @@ This is a RESTful API built with Hapi.js, TypeScript, and Prisma for managing a 
 
 3. Create a `.env` file in the root directory with the following content:
    ```
-   PORT=3000
-   HOST=localhost
+   PORT=8000
    DATABASE_URL="mysql://user:password@localhost:3306/sakila"
    ```
    Replace the database connection string with your actual MySQL credentials.
@@ -61,18 +54,15 @@ http://localhost:3000/documentation
 
 ## Available Scripts
 
-- `npm run dev`: Start development server with hot reload
-- `npm start`: Start production server
-- `npm run build`: Build TypeScript code
+- `npm run dev`: Start development server 
+
 
 ## API Endpoints
 
 ### Films
-- GET /api/films - List films with filtering and sorting
+- GET /api/films - List films with filtering 
 - GET /api/films/{id} - Get film details
-- POST /api/films/views - Save a filter/sort view
-- GET /api/films/views - List saved views
-- GET /api/films/views/{id} - Get view details
+
 
 ### Stores
 - GET /api/stores - List stores

@@ -67,7 +67,7 @@ export const storeController = {
         const page = Number(query.page) || 1;
         const limit = Number(query.limit) || 10;
 
-        const result = await storeService.getStores(filter, sort);
+        const result = await storeService.getStores(filter, sort,page, limit);
         return h.response(result).code(200);
       } catch (error) {
         console.error('Error in getStores:', error);
