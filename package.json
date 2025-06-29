@@ -22,7 +22,10 @@
     "hapi-swagger": "^17.3.2",
     "joi": "^17.13.3",
     "nodemon": "^3.1.10",
-    "prisma": "^6.9.0"
+    "prisma": "^6.9.0",
+    "@types/node": "^24.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@types/node": "^24.0.1",
